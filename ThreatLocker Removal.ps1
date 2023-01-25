@@ -19,3 +19,6 @@ Invoke-WebRequest -Uri $downloadURL -OutFile $localInstaller;
 
 # Run the installer with the "uninstall" parameter
 & $localInstaller uninstall;
+
+# Cleanup
+Remove-Item -Path "C:\Temp\ThreatLockerStub.exe" -Force
